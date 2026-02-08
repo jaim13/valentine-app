@@ -23,7 +23,7 @@ function App() {
 
   const handleYes = () => {
     const phone = "50664700712";
-    const message = "She said YES 💖 Valentine confirmed!";
+    const message = "Yes, for sure I want to be your Valentine!";
     window.location.href = `https://wa.me/${phone}?text=${encodeURIComponent(
       message
     )}`;

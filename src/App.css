@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: white;
+}
+
+/* CONTENEDOR */
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 24px;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 720px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* TEXTO */
+h1 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin-bottom: 32px;
+  color: #111;
+}
+
+/* GIF */
+.gif {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto 40px;
+  display: block;
+  border-radius: 18px;
+}
+
+/* BOTONES PRINCIPALES */
+.buttons {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 32px;
+  justify-content: center;
+}
+
+button {
+  padding: 16px 36px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* YES */
+.yes {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* NO */
+.no {
+  background-color: #f44336;
+  color: white;
+  transition: transform 0.25s ease;
+}
+
+/* MODAL */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.modal {
+  background: white;
+  padding: 32px;
+  border-radius: 24px;
+  max-width: 380px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.modal h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #111; /* 🔥 FIX REAL */
+}
+
+
+.modal-gif {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.modal-back {
+  background: #4caf50;
+  color: white;
+  width: 100%;
+}
